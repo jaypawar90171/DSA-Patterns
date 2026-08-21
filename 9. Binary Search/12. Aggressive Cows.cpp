@@ -6,17 +6,19 @@ class Solution {
     // helper function check whether with current guess is it possible stall all cows
     bool canPlace(vector<int> &arr, int guess, int &k)
     {
-        // first cow is placed at 0th index(why to west it)
+        // first cow is placed at 0th index(why to waste it)
         int cows = 1;
         int prev = arr[0]; // indicate location of prev cow
         
         for(int i = 1; i < arr.size(); i++)
         {
+            // if the distance between two stalls in >= guessed distance
             if(arr[i] - prev >= guess)
             {
                 cows++;
                 prev = arr[i];
                 
+                // we can place k cows with the guessed distance
                 if(cows == k)
                     return true;
             }

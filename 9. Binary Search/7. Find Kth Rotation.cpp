@@ -12,6 +12,7 @@ class Solution {
         int low = 0, end = n - 1;
         int start = arr[0];
         
+        // edge case: if array is already sorted
         if(arr[0] <= arr[n-1]) return 0;
 
         while (low < end) 

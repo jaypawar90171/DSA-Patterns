@@ -21,6 +21,7 @@ All the elements to the right of inflection point < first element of the array.
             int mid = low + (end - low) / 2;
 
             if (nums[mid] >= start)
+                // we are yet to react inflection point so move on left
                 low = mid + 1;
             else
                 end = mid;

@@ -17,6 +17,7 @@ public:
     {
         int low = 0; // The H-index can be 0 even if the minimum citation is larger, and it can never exceed n (number of papers).
         int high = *max_element(citations.begin(), citations.end());
+        int ans = 0;
 
         while(low <= high)
         {
@@ -24,6 +25,7 @@ public:
 
             if(solve(citations, mid))
             {
+                ans = max(ans, mid);
                 low = mid + 1;
             }
             else
@@ -31,7 +33,7 @@ public:
                 high = mid - 1;
             }
         }
-        return high;
+        return ans;
     }
 };
 

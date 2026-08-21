@@ -20,8 +20,9 @@ public:
                 }
             }
             else
-                flowers = 0;
+                flowers = 0; // we only need k adjacnet values if not reset it
         }
+        // reason to use > sign is that if more than m bouquets is possible then it is obvious that m is also possible.
         return bouquets >= m;
     }
     int minDays(vector<int>& bloomDay, int m, int k) 

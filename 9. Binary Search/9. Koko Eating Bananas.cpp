@@ -19,10 +19,10 @@ public:
                 hoursTaken += ceil((double)piles[i] / mid);
             }   
 
-            if(hoursTaken <= h) high = mid;
+            if(hoursTaken <= h) high = mid; // found valid answer try to find minimum valid answer
             else
             {
-                // we need to decide the new values for the k
+                // we need to decide the new values for the k as it excceds the mentioned hours
                 low = mid + 1;
             }
         } 

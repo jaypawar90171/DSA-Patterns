@@ -44,8 +44,10 @@ public:
             int cnt = checkCount(guess, matrix);
 
             if(cnt < k)
+                //if we get coung less than k means we need to check for higher number
                 low = guess + 1;
             else
+                //check for lower number
                 high = guess;
         }
         return low;
