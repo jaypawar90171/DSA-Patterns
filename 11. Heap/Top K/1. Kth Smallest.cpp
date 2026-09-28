@@ -1,3 +1,6 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution {
   public:
     int kthSmallest(vector<int> &arr, int k) 
@@ -15,7 +18,7 @@ class Solution {
             pq.pop();
             pq.push(arr[i]);
         }
-
+            
         return pq.top();
     }
 };

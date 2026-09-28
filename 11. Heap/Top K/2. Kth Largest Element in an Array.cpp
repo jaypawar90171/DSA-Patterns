@@ -1,3 +1,6 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution {
 public:
     int findKthLargest(vector<int>& nums, int k)
@@ -20,9 +23,10 @@ public:
     }
 };
 
-int main
+int main()
 {
     Solution s;
     s.findKthLargest({10, 5, 4, 3, 48, 6, 2, 33, 53, 10}, 4)
     return 0;
+    
 }
