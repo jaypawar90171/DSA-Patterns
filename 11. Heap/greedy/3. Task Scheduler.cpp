@@ -51,9 +51,10 @@ public:
     }
 };
 
-int main
+int main()
 {
     Solution s;
-    s.leastInterval({"A","A","A","B","B","B"}, 2);
+    vector<char> tasks = {'A', 'A', 'A', 'B', 'B', 'B'};
+    s.leastInterval(tasks, 2);
     return 0;
 }

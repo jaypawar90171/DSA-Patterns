@@ -30,9 +30,10 @@ public:
     }
 };
 
-int main
+int main()
 {
     Solution s;
-    s.lastStoneWeight({2,7,4,1,8,1});
+    vector<int> stones = {2,7,4,1,8,1};
+    s.lastStoneWeight(stones);
     return 0;
 }
